@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://github.com/cocojian/documents.git/sitemap.xml
