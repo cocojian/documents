@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on flutter100days</title>
+    <link>https://cocojian.github.io/flutter_docs/tags/</link>
+    <description>Recent content in Tags on flutter100days</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 22 Nov 2021 21:30:31 +0800</lastBuildDate><atom:link href="https://cocojian.github.io/flutter_docs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>flutter</title>
+      <link>https://cocojian.github.io/flutter_docs/tags/flutter/</link>
+      <pubDate>Mon, 22 Nov 2021 21:30:31 +0800</pubDate>
+      
+      <guid>https://cocojian.github.io/flutter_docs/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

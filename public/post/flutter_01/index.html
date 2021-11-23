@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Day01-概述 安装 配置 - flutter100days</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="J老师" /><meta name="description" content="（一）Flutter概述 Flutter是谷歌的移动UI框架，使用dart语言来编写，可以快速在iOS和Android上构建高质量的原生用户界" /><meta name="keywords" content="Hugo, theme, flutter100days" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.89.4 with theme even" />
+
+
+<link rel="canonical" href="https://cocojian.github.io/flutter_docs/post/flutter_01/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/flutter_docs/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/flutter_docs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/flutter_docs/favicon-16x16.png">
+<link rel="manifest" href="/flutter_docs/manifest.json">
+<link rel="mask-icon" href="/flutter_docs/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/flutter_docs/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Day01-概述 安装 配置" />
+<meta property="og:description" content="（一）Flutter概述 Flutter是谷歌的移动UI框架，使用dart语言来编写，可以快速在iOS和Android上构建高质量的原生用户界" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cocojian.github.io/flutter_docs/post/flutter_01/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-11-22T21:30:31+08:00" />
+<meta property="article:modified_time" content="2021-11-22T21:30:31+08:00" />
+
+<meta itemprop="name" content="Day01-概述 安装 配置">
+<meta itemprop="description" content="（一）Flutter概述 Flutter是谷歌的移动UI框架，使用dart语言来编写，可以快速在iOS和Android上构建高质量的原生用户界"><meta itemprop="datePublished" content="2021-11-22T21:30:31+08:00" />
+<meta itemprop="dateModified" content="2021-11-22T21:30:31+08:00" />
+<meta itemprop="wordCount" content="1651">
+<meta itemprop="keywords" content="flutter," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Day01-概述 安装 配置"/>
+<meta name="twitter:description" content="（一）Flutter概述 Flutter是谷歌的移动UI框架，使用dart语言来编写，可以快速在iOS和Android上构建高质量的原生用户界"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/flutter_docs/" class="logo">Flutter100days</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/flutter_docs/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/flutter_docs/post/">
+        <li class="mobile-menu-item">文档</li>
+      </a><a href="/flutter_docs/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/flutter_docs/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/flutter_docs/" class="logo">Flutter100days</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/flutter_docs/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/flutter_docs/post/">文档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/flutter_docs/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/flutter_docs/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Day01-概述 安装 配置</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-11-22 </span>
+        <div class="post-category">
+            <a href="/flutter_docs/categories/flutter/"> flutter </a>
+            </div>
+          <span class="more-meta"> 约 1651 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/flutter_docs/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>（一）Flutter概述</p>
+<hr>
+<p>Flutter是谷歌的移动UI框架，使用dart语言来编写，可以快速在iOS和Android上构建高质量的原生用户界面。 Flutter可以与现有的代码一起工作。在全世界，Flutter正在被越来越多的开发者和组织使用，并且Flutter是完全免费、开源的。</p>
+<p>Flutter Widget采用现代响应式框架构建，这是从 React 中获得的灵感，<strong>中心思想是用widget（组件）构建你的UI</strong>。 当widget的状态发生变化时，widget会重新构建UI，Flutter会对比前后变化的不同， 以确定底层渲染树从一个状态转换到下一个状态所需的最小更改（译者语：类似于React/Vue中虚拟DOM的diff算法。</p>
+<p>最新的版本是2.2
+  </p>
+<ul>
+<li><a href="https://flutter.dev/">flutter 官网 （网络不太稳定）</a></li>
+<li><a href="https://flutterchina.club/">flutter中文网</a></li>
+<li><a href="https://pub.dev/">flutter插件下载</a></li>
+</ul>
+<hr>
+<p>（二）Flutter优点</p>
+<ol>
+<li><strong>效率</strong> Flutter的热重载可帮助您快速地进行测试、构建UI、添加功能并更快地修复错误。在iOS和Android模拟器或真机上可以在亚秒内重载，并且不会丢失状态。</li>
+<li><strong>美观</strong> 使用Flutter内置美丽的Material Design和Cupertino（iOS风格）widget、丰富的motion API、平滑而自然的滑动效果和平台感知，为您的用户带来全新体验。</li>
+<li><strong>多终端</strong> 使用Flutter的现代、响应式框架，和一系列基础widget，轻松构建您的用户界面。使用功能强大且灵活的API（针对2D、动画、手势、效果等）解决艰难的UI挑战。</li>
+<li><strong>访问本地功能和SDK</strong> 通过平台相关的API、第三方SDK和原生代码让您的应用变得强大易用。 Flutter允许您复用现有的Java、Swift或ObjC代码，访问iOS和Android上的原生系统功能和系统SDK。</li>
+</ol>
+<hr>
+<p>（三）Flutter安装</p>
+<ol>
+<li>去flutter官网下载其最新可用的安装包，<a href="https://flutter.dev/docs/development/tools/sdk/releases#windows">点击下载</a> 。在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去Flutter github项目下去<a href="https://github.com/flutter/flutter/releases">下载安装包</a> 。</li>
+<li>将安装包zip解压到你想安装Flutter SDK的路径（如：C:\src\flutter；注意，不要将flutter安装到需要一些高权限的路径如C:\Program Files\。</li>
+<li>由于在国内访问Flutter有时可能会受到限制，Flutter官方为中国开发者搭建了临时镜像
+<ol>
+<li>到 “控制面板&gt;用户帐户&gt;用户帐户&gt;更改我的环境变量”</li>
+<li>在“用户变量”下检查是否有名为“Path”的条目:如果该条目存在, 追加 flutter\bin的全路径，使用 ; 作为分隔符.如果条目不存在, 创建一个新用户变量 Path ，然后将 flutter\bin的全路径作为它的值.</li>
+<li>在“用户变量”下添加两个变量
+PUB_HOSTED_URL=https://pub.flutter-io.cn
+FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</li>
+</ol>
+</li>
+<li>打开一个新的命令提示符或PowerShell窗口并运行以下命令以查看是否需要安装任何依赖项来完成安装：flutter doctor</li>
+</ol>
+<hr>
+<p>（三）IDE安装</p>
+<p>1.下载并安装 Android Studio.
+2. 启动Android Studio，然后执行“Android Studio安装向导”。这将安装最新的Android SDK，Android SDK平台工具和Android SDK构建工具，这是Flutter为Android开发时所必需的
+3. Flutter插件： 支持Flutter开发工作流 (运行、调试、热重载等).
+4. Dart插件： 提供代码分析 (输入代码时进行验证、代码补全等).</p>
+<hr>
+<p>（四）模拟器安装</p>
+<ol>
+<li>使用Android Studio内置安卓模拟器</li>
+<li>使用真机</li>
+</ol>
+<hr>
+<p>（五）创建flutter工程</p>
+<ol>
+<li>选择 File&gt;New Flutter Project选择 Flutter application 作为 project 类型, 然后点击 Next输入项目名称 (如 myapp), 然后点击 Next点击 Finish等待Android Studio安装SDK并创建项目</li>
+<li>上述命令创建一个Flutter项目，项目名为myapp（可以为任意的名称），其中包含一个使用Material 组件的简单演示应用程序。在项目目录中，您应用程序的代码位于 lib/main.dart.</li>
+<li>运行应用程序
+<img src="/Image.png" alt="Local Picture" title="Local Picture"></li>
+<li> 热重载（hot reload） 对代码进行更改，然后告诉IDE你需要重新加载（点击reload按钮），你就会在你的设备或模拟器上看到更改。</li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">J老师</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-11-22
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/flutter_docs/tags/flutter/">flutter</a>
+          </div>
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'flutter100days';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://cocojian.github.io/flutter_docs/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/flutter_docs/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/flutter_docs/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2020 - 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>J老师</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/flutter_docs/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

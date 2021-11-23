@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://cocojian.github.io/flutter_docs/sitemap.xml
